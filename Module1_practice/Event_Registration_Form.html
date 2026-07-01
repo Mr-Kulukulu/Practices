@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event Registration Form</h1>
+    </header>
+    <hr>
+    <main>
+        <p>Please fill out the form below to register for the event</p>
+        <form action="">
+            <label for=""><strong>Personal Information</strong></label><br><br>
+            <label for="text">Full Name :</label><br>
+            <input type="text" id="text" required><br>
+
+            <label for="phone">Phone Number :</label><br>
+            <input type="tel" id="phone" required><br>
+
+            <label for="email">Email Address :</label><br>
+            <input type="email" id="email" required><br>
+            <label for="date">Date of Birth</label><br>
+            <input type="date" name="" id="date" required><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+            <input type="radio" name="gender" id="other"><label for="other">Other</label>
+            <hr>
+            <!-- Event Details -->
+            <section>
+
+                <p><strong>Event Details</strong></p>
+                <p>Select Event :</p>
+                <input type="checkbox" name="web-dev" id="web">
+                <label for="web">Web Development Workshop</label><br>
+                <input type="checkbox" name="" id="ui-ux">
+                <label for="ui-ux">UI/UX Design Seminer</label><br>
+                <input type="checkbox" name="" id="data-science">
+                <label for="data-science">Data Science Conference</label><br>
+                <label for="">Select Session :</label><br>
+                <select name="" id="">
+                    <option value="">Opening Ceremony</option>
+                    <option value="">Technical Workshop</option>
+                    <option value="">Networking Session</option>
+                    <option value="">Panel Discussion</option>
+                    <option value="">Closing Ceremony</option>
+                </select>
+            </section>
+            <!-- Additional Information -->
+            <section>
+
+                <p><strong>Additional Information:</strong></p>
+
+                <P>How did you hear about this event?</P>
+                <input type="checkbox" name="" id="socail">
+                <label for="socail">Social Media</label>
+                <input type="checkbox" name="" id="friend">
+                <label for="friend">Friend</label>
+                <input type="checkbox" name="website" id="website">
+                <label for="website">Website</label>
+                <input type="checkbox" name="other" id="Other">
+                <label for="Other">Other</label><br>
+                <label for="area">Why do you want to attend?</label><br>
+                <textarea name="" id="area" rows="5"></textarea>
+            </section>
+
+            <section>
+                <p><strong>Terms & Condition</strong></p>
+                <input type="checkbox" name="" id="">
+               <label for="">I agree to the <u>Terms & Conditions</u> and confirm my registration</label><hr>
+            </section>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
